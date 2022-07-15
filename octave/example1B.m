@@ -30,7 +30,6 @@ V = [Price_; Size_ ; Renewal_; Style_]';
 %Criterion weight
 u = ahptd_obj.CriterionWeight(V);
 
-
 %Get the PC matrix of criteria
 A          = ahptd_obj.Conversion(u);
 [l, u, cr] = ahptd_obj.LPV(A);
